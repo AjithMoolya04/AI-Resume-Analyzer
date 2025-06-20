@@ -1,1 +1,1 @@
-
+JobFit Analyzer is an AI-powered web app that reviews your resume and matches it with job descriptions using Google’s Gemini LLM. It provides a match score, highlights strengths and gaps, and lets you ask custom questions about your resume—all in one place.

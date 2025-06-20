@@ -2,9 +2,9 @@
 
 **Smart Resume Analysis & Job Matching Tool**
 
-**Category:** AI/ML Application  
-**Created by:** [Ajith Moolya]
-
+**Category**: AI/ML Application
+**Technology Stack**: FastAPI + Google Gemini LLM
+**Created by**: Ajith Moolya
 ---
 
 ## 🔍 Problem Statement
@@ -15,24 +15,34 @@ Job seekers receive rejections without feedback, making it impossible to know wh
 
 ## 💡 Solution Overview
 
-**AI Resume Analyser** uses Google Gemini LLM to analyze resumes against job descriptions and provide:
-- **ATS match percentage** scoring
-- **Missing keywords** identification  
-- **Actionable improvement suggestions**
-- **Personalized optimization recommendations**
+**AI Resume Analyser** is an intelligent web application that leverages Google's Gemini LLM to provide comprehensive resume analysis and optimization suggestions. The system:
 
-Built with **FastAPI** for robust performance and **Gemini AI** for intelligent analysis.
+✅ **Analyzes resume-job alignment** with precision scoring  
+✅ **Identifies missing keywords** and critical skills gaps  
+✅ **Provides actionable improvement suggestions**  
+✅ **Offers ATS optimization recommendations**  
+✅ **Delivers instant, personalized feedback**
 
----
-
-## 🏗️ Architecture
-
-```
-Resume + Job Description → FastAPI Backend → Gemini LLM → AI Analysis → Structured Feedback
-```
+Built with **FastAPI** for robust backend performance and **Google Gemini AI** for advanced natural language understanding, this tool transforms resume optimization from guesswork into a data-driven process.
 
 ---
 
+## 🏗️ Architecture/ Data Flow
+```mermaid
+graph LR
+    A["📄 User UploadsResume PDF"] --> B["🔄 PDF Converted toImage/Text"]
+    B --> C["🤖 Gemini LLM: Resume + JDAnalysis"]
+    C --> D["📊 Match % + Keyword Gaps +Suggestions"]
+    D --> E["🌐 FastAPI UI +Results"]
+    
+    style A fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#fff
+    style B fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#fff
+    style C fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#fff
+    style D fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#fff
+    style E fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#fff
+```
+
+---
 ## 🛠️ Tools Used
 
 - **FastAPI:** High-performance web framework
@@ -69,18 +79,6 @@ Resume + Job Description → FastAPI Backend → Gemini LLM → AI Analysis → 
 - Cover letter analysis
 - Mobile app development
 - HR dashboard for recruiters
-
----
-
-## 🔧 Quick Start
-
-```bash
-git clone https://github.com/yourusername/ai-resume-analyser.git
-cd ai-resume-analyser
-pip install -r requirements.txt
-# Add Google Gemini API key to .env
-uvicorn main:app --reload
-```
 
 ---
 

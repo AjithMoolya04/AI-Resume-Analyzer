@@ -1,1 +1,1 @@
-# AI-Resume-Analyzer
+# Resume Screening-Powered by Google Gemini AI

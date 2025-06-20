@@ -2,9 +2,9 @@
 
 **Smart Resume Analysis & Job Matching Tool**
 
-**Category**: AI/ML Application
-**Technology Stack**: FastAPI + Google Gemini LLM
-**Created by**: Ajith Moolya
+**Category:** AI/ML Application  
+**Technology Stack:** FastAPI + Google Gemini LLM  
+**Created by:** Ajith Moolya
 ---
 
 ## 🔍 Problem Statement

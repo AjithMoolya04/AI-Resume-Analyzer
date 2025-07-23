@@ -1,3 +1,7 @@
+
+![Web Interface](samples/interface.png) 
+
+
 # 🚀 AI Resume Analyser – Powered by Google Gemini LLM
 
 **Smart Resume Analysis & Job Matching Tool**

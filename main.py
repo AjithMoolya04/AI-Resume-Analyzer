@@ -27,7 +27,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 load_dotenv()  # make sure this is near the top
-GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
+GEMINI_API_KEY =API key
 
 if not GEMINI_API_KEY:
     raise RuntimeError("GOOGLE_API_KEY is not set in the environment!")
@@ -187,4 +187,5 @@ async def custom_query(request: QueryRequest):
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
